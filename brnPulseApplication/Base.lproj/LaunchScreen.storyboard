@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +20,58 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4nY-TY-cNS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lanch2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="czb-sN-nZ8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙏🏻 WelCome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1t-4a-Nch">
+                                        <rect key="frame" x="42" y="547" width="277" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.026570511981844902" green="0.027980005368590355" blue="0.010692412964999676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brnlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="N8n-vB-fO3">
+                                        <rect key="frame" x="49" y="8" width="291" height="176"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="176" id="rlB-AS-nw3"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.096126087009906769" green="0.34192219376564026" blue="0.38787299394607544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="czb-sN-nZ8" firstAttribute="centerX" secondItem="N8n-vB-fO3" secondAttribute="centerX" constant="-7" id="3C9-md-grA"/>
+                                    <constraint firstItem="czb-sN-nZ8" firstAttribute="height" secondItem="4nY-TY-cNS" secondAttribute="height" id="KgX-xA-XEk"/>
+                                    <constraint firstItem="czb-sN-nZ8" firstAttribute="width" secondItem="4nY-TY-cNS" secondAttribute="width" id="UoI-fS-ag9"/>
+                                    <constraint firstItem="czb-sN-nZ8" firstAttribute="top" secondItem="4nY-TY-cNS" secondAttribute="top" id="XOU-gQ-hIn"/>
+                                    <constraint firstItem="x1t-4a-Nch" firstAttribute="centerY" secondItem="N8n-vB-fO3" secondAttribute="centerY" constant="465.25" id="hI2-xn-Kbj"/>
+                                    <constraint firstItem="x1t-4a-Nch" firstAttribute="centerX" secondItem="4nY-TY-cNS" secondAttribute="centerX" constant="-7" id="hKf-VR-RG5"/>
+                                    <constraint firstItem="x1t-4a-Nch" firstAttribute="width" secondItem="N8n-vB-fO3" secondAttribute="width" constant="-14" id="jmw-QF-4gW"/>
+                                    <constraint firstItem="N8n-vB-fO3" firstAttribute="centerX" secondItem="x1t-4a-Nch" secondAttribute="centerX" constant="14" id="nIz-Fw-QHN"/>
+                                    <constraint firstItem="N8n-vB-fO3" firstAttribute="leading" secondItem="4nY-TY-cNS" secondAttribute="leading" constant="49" id="pVU-DD-niN"/>
+                                    <constraint firstItem="x1t-4a-Nch" firstAttribute="centerX" secondItem="N8n-vB-fO3" secondAttribute="centerX" constant="-14" id="s7i-Uj-f8t"/>
+                                    <constraint firstItem="N8n-vB-fO3" firstAttribute="top" secondItem="4nY-TY-cNS" secondAttribute="top" constant="8" id="x1Y-uH-3fn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4nY-TY-cNS" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="LyZ-sa-34I"/>
+                            <constraint firstItem="4nY-TY-cNS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="cvK-29-6cb"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="4nY-TY-cNS" secondAttribute="bottom" id="lN8-bM-oJm"/>
+                            <constraint firstAttribute="trailing" secondItem="4nY-TY-cNS" secondAttribute="trailing" id="mst-5G-7t6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="brnlogo.png" width="374" height="326"/>
+        <image name="lanch2.jpg" width="736" height="1377"/>
+    </resources>
 </document>
